@@ -5,6 +5,6 @@
     "start": "n8n start"
   },
   "dependencies": {
-    "n8n": "1.94.1"
+    "n8n": "latest"
   }
 }
