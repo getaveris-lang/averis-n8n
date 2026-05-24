@@ -1,0 +1,35 @@
+services:
+  - type: web
+    name: averis-n8n
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: N8N_HOST
+        value: 0.0.0.0
+      - key: N8N_PROTOCOL
+        value: https
+      - key: N8N_PORT
+        value: 10000
+      - key: WEBHOOK_URL
+        value: https://averis-n8n.onrender.com/
+      - key: GENERIC_TIMEZONE
+        value: Asia/Karachi
+      - key: DB_TYPE
+        value: postgresdb
+      - key: DB_POSTGRESDB_HOST
+        value: dpg-d89ead0jo6nc73dormo0-a.oregon-postgres.render.com
+      - key: DB_POSTGRESDB_PORT
+        value: 5432
+      - key: DB_POSTGRESDB_USER
+        value: averis
+      - key: DB_POSTGRESDB_PASSWORD
+        value: QsALmTXiMxxmpr8aG9oEDtjTZCTwkp9f
+      - key: DB_POSTGRESDB_DATABASE
+        value: n8n_mvz9
+      - key: N8N_BASIC_AUTH_ACTIVE
+        value: true
+      - key: N8N_BASIC_AUTH_USER
+        value: averis
+      - key: N8N_BASIC_AUTH_PASSWORD
+        value: Averis2025!
